@@ -26,7 +26,8 @@
 #define SD LC(LS(LA(LBRC))) // Shade: Brightness Up
 #define SU LC(LS(LA(RBRC))) // Shade: Brightness Down
 #define THR_R LC(LG(RIGHT)) //Throw the Active Window to the Space to the Right
-#define THR_L LC(LG(UP)) //Throw the Active Window to the Space to the Right
+#define THR_L LC(LG(LEFT)) //Throw the Active Window to the Space to the Left
+#define TD_RR MEH(KC_X) // Yabai: Make Window Fill Space
 #define TAB_L LC(LS(LEFT)) // Switch to the Tab to the Left
 #define TAB_R LC(LS(RIGHT)) // Switch to the Tab to the Right
 #define TAB_U LC(LS(UP)) // Switch to the Tab Above
@@ -113,7 +114,7 @@
 
                 mous_layer {
                         bindings = <
-   &trans    &trans   &trans &trans    &A_RR  &trans &trans &kp BCK &kp SL &kp MC &kp MC &kp SR
+   &trans    &trans   &trans &trans    &kp A_RR &trans &trans &kp BCK &kp SL &kp MC &kp MC &kp SR
    &kp THR_L &trans   &trans &kp THR_R &trans &trans &trans &trans  &trans &trans &trans &trans
    &kp A_SFW &SCRS    &trans &trans    &trans &trans &trans &trans  &trans &trans &trans &trans
                       &trans &trans    &trans &trans &trans &trans  &trans &trans
